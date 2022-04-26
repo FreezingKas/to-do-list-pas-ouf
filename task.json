@@ -1,0 +1,3 @@
+{"task": [ {"desc": "Chier dans la fosse septique","done": false},{"desc": "Frapper timo","done": false}]}
+
+// localStorage.setItem("json", '{"task": [ {"desc": "Chier dans la fosse septique","done": false},{"desc": "Frapper timo","done": false}]}')
