@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-    <link href="./index.css" rel="stylesheet">
+    <link href="./contact.css" rel="stylesheet">
     <link href="./common.css" rel="stylesheet">
     <title>TODO List</title>
     <meta charset="utf-8">
@@ -13,7 +13,7 @@
     <div id="mySidenav" class="sidenav">
         <a id="closeBtn" href="#" class="close">&times;</a>
         <ul>
-            <li><a href="#">Accueil</a></li>
+            <li><a href="./index.html">Accueil</a></li>
             <li><a href="./contact.html">Contact</a></li>
         </ul>
     </div>
@@ -30,18 +30,22 @@
         <h1>That's My Todo</h1>
     </div>
 
+    <!-- Formulaire -->
+    <form class="form">
+        <label for="fname">Email</label>
+        <input type="text" id="fname" name="firstname" placeholder="Email...">
+      
+        <label for="lname">Nickname</label>
+        <input type="text" id="lname" name="lastname" placeholder="Nickname...">
+      
+        <label for="country">Message</label>
+        <input type="text" id="lname" name="lastname" placeholder="Message...">
+      
+        <input type="submit" value="Submit">
+      </form>
 
-    <!-- Menu des tâches -->
-    <input id="task-input" type="text" placeholder="Task...">
-    <button class="addbutton" onclick="addTask()">Ajouter</button>
-    <div id="tasks" class="tasks">
-    </div>
-
-    <script src="./script.js"></script>
+    <!-- Script -->
     <script src="./burger.js"></script>
-    <footer class="footer">
-        <p class="text-footer">Sah quel plaisir :)</p>
-    </footer>
 </body>
 
 </html>
