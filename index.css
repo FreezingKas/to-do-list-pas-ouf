@@ -55,6 +55,7 @@ input {
     margin-left:30%;
     margin-right:30%;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .task {
@@ -81,3 +82,17 @@ input {
     border-radius: 5px;
 }
 
+.footer {
+    flex-shrink: 0;
+    background-color: #43484d;
+    box-shadow: 2px -5px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-height: 50px;
+}
+
+.text-footer {
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
