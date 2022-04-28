@@ -45,6 +45,10 @@ function Load() {
         el.appendChild(text);
         el.appendChild(button2);
         el.appendChild(button);
+
+        if(content[i].done) {
+            el.style.opacity = 0.33;
+        }
         
         document.getElementById("tasks").appendChild(el);
     }
