@@ -1,3 +1,4 @@
+/* Style pour l'input de la tâche centré */
 input {
     /*Apparence*/
     border: none;
@@ -15,6 +16,7 @@ input {
     font-size: 30px;
 }
 
+/* Bouton pour ajouter les tâches centré */
 .addbutton {
     /*Centrer et grossir le bouton*/
     margin: auto;
@@ -31,6 +33,7 @@ input {
     cursor: pointer;
 }
 
+/* Style pour le texte quand il y a aucune tâche */
 .no-task-text {
     color: white;
     text-align: center;
@@ -38,6 +41,7 @@ input {
     font-family: inherit;
 }
 
+/* Style pour la div contenant toutes les task */
 .tasks {
     margin-left: 30%;
     margin-right: 30%;
@@ -45,6 +49,7 @@ input {
     margin-bottom: 50px;
 }
 
+/* Style pour chaque tâche individuelle */
 .task {
     background-color: white;
     margin-bottom: 15px;
@@ -56,6 +61,7 @@ input {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+/* Style tu texte de la tâche */
 .task-text {
     display: inline-block;
     margin-top: 0;
@@ -63,6 +69,7 @@ input {
     font-family: inherit;
 }
 
+/* Style des boutons tâche effectué et de suppresion */
 .task-button {
     float: right;
     margin-left: 15px;
