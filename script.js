@@ -5,13 +5,6 @@ function Load() {
         localStorage.setItem("json", JSON.stringify({task: []}));
     }
 
-    // Listener sur la sur l'input pour ajouter un tâche quand appuie sur entrée
-    document.getElementById("task-input").addEventListener('keypress', function (e) {
-        if (e.key === 'Enter') {
-          addTask();
-        }
-    });
-
     // On récupère le contenu JSON du localStorage et on parse le JSON
     var content = localStorage.getItem("json");
     content = JSON.parse(content).task;

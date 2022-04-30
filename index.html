@@ -17,6 +17,7 @@
             <ul>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./aide.html">Aide</a></li>
             </ul>
         </div>
 
@@ -34,8 +35,11 @@
         </div>
 
         <!-- Menu des tâches -->
-        <input id="task-input" type="text" placeholder="Task...">
-        <button class="addbutton" onclick="addTask()">Ajouter</button>
+        <form onsubmit="addTask()">
+            <input id="task-input" type="text" placeholder="Task..." required>
+            <button class="addbutton">Ajouter</button>
+        </form>
+        
         <div id="tasks" class="tasks">
         </div>
     </div>
