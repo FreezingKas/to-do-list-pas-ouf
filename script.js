@@ -63,11 +63,7 @@ function removeTask(index) {
     content = JSON.parse(content);
 
     // On supprime la tâche grâce à l'index passé en paramètre
-    for(var i = 0; i < content.task.length; i++) {
-        if(i == index) {
-            content.task.splice(i, 1);
-        }
-    }
+    content.task.splice(index, 1);
 
     // On met à jour le localStorage, on vide la div et on recharge les tâches
     localStorage.setItem("json", JSON.stringify(content));
@@ -82,16 +78,12 @@ function taskDone(index) {
     content = JSON.parse(content);
 
     // On modifie la tâche comme effectué grâce à l'index passé en paramètre
-    for(var i = 0; i < content.task.length; i++) {
-        if(i == index) {
-            content.task[i].done = !content.task[i].done;
-        }
-    }
+    content.task[index].done = !content.task[index].done;
 
     // On met à jour le localStorage, on vide la div et on recharge les tâches
     localStorage.setItem("json", JSON.stringify(content));
     document.getElementById("tasks").innerHTML = "";
-    Load()
+    Load();
 }
 
 
